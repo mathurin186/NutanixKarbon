@@ -12,3 +12,34 @@ Too easy. Go through the motions of creating a cluster:
 
 After creation, download a new KubeConfig file. Understand that this is only live for 24 hours and will need to be redownloaded.
 
+
+
+# Deployement Steps
+
+Deploy Kubernetes Dashboard
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
+...after that's done
+Kubectl proxy 
+(This will start the proxy server for you to open in a window browers.)
+Don't go to 127.0.0.1, but rather go here:
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
+Deploy and Scale Nginx container
+Note: Take time in between each command. Containers take time to build.
+
+kubectl create deployment --image nginx my-nginx
+kubectl get pods
+kubectl get deployment
+kubectl scale deployment --replicas 2 my-nginx
+kubectl get pods
+kubectl expose deployment my-nginx --port=80  type=NodePort
+kubectl get services
+
+Deploy Cluster WITH yaml files
+
+Clone files to desired directory, then execute said command in that same directory.
+Note: You HAVE to execute the command from INSIDE the directory. Anything else will result in Mathurin and Silva laughing at you.
+kubectl apply -k .
+...after a few seconds
+kubectl get pods
+
