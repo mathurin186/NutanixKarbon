@@ -19,7 +19,7 @@ After creation, download a new KubeConfig file. Understand that this is only liv
 --------------------
 The three items you can deploy are showing common use cases. Nothing too 'deep divy'
 
-Deploy Kubernetes Dashboard
+1. Deploy Kubernetes Dashboard
 ![alt text](https://d33wubrfki0l68.cloudfront.net/349824f68836152722dab89465835e604719caea/6e0b7/images/docs/ui-dashboard.png)
 "Dashboard is a web-based Kubernetes user interface. You can use Dashboard to deploy containerized applications to a Kubernetes cluster, troubleshoot your containerized application, and manage the cluster resources. You can use Dashboard to get an overview of applications running on your cluster, as well as for creating or modifying individual Kubernetes resources (such as Deployments, Jobs, DaemonSets, etc)." [Web UI Website](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 ```
@@ -34,8 +34,8 @@ Kubectl proxy
 Don't go to 127.0.0.1, but rather go here:
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
 
-Deploy and Scale Nginx container
-Note: Take time in between each command. Containers take time to build.
+2. Deploy and Scale Nginx container
+Note: Take a few moments before running each command. Containers take time to build.
 
 ```
 kubectl create deployment --image nginx my-nginx
@@ -47,7 +47,7 @@ kubectl expose deployment my-nginx --port=80  type=NodePort
 kubectl get services
 ```
 
-Deploy Cluster WITH yaml files
+3. Deploy Cluster WITH yaml files
 
 Clone files to desired directory, then execute said command in that same directory.
 Note: You HAVE to execute the command from INSIDE the directory. Anything else will result in Mathurin and Silva laughing at you.
