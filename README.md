@@ -17,7 +17,11 @@ After creation, download a new KubeConfig file. Understand that this is only liv
 
 ## Deployement Steps
 --------------------
+The three items you can deploy are showing common use cases. Nothing too 'deep divy'
+
 Deploy Kubernetes Dashboard
+![alt text](https://d33wubrfki0l68.cloudfront.net/349824f68836152722dab89465835e604719caea/6e0b7/images/docs/ui-dashboard.png)
+"Dashboard is a web-based Kubernetes user interface. You can use Dashboard to deploy containerized applications to a Kubernetes cluster, troubleshoot your containerized application, and manage the cluster resources. You can use Dashboard to get an overview of applications running on your cluster, as well as for creating or modifying individual Kubernetes resources (such as Deployments, Jobs, DaemonSets, etc)." [Web UI Website](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
 ```
