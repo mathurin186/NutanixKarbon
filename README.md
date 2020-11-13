@@ -1,14 +1,14 @@
 # Nutanix Karbon
 ---------------
-Performing a Karbon demo shouldn't be hard. Anyone can do this. In fact, that's the point behind Karbon, it's so easy, anyone can demo it. You don't have to be an expert.
+Playing around with Karbon shouldn't be hard. Anyone can do this. In fact, that's the point behind Karbon, it's so easy, anyone can use it. You don't have to be an expert.
 
 ## What do I do???
 ------------------
 Go through the motions of creating a cluster:
 - Select Development Cluster
-- Ensure that you select the cluster you want to deploy to (Version and Host OS don't matter for a basic demo)
+- Ensure that you select the cluster you want to deploy to (Version and Host OS don't matter for a basic cluster)
 - Select the Node Network that has internet access
-- Inform the client that Flannel is the default network provider for Karbon's internal communication
+- KNOW that Flannel is the default network provider for Karbon's internal communication
 - Very important to put in your cluster login information
 
 After creation, download a new KubeConfig file. Understand that this is only live for 24 hours and will need to be redownloaded.
@@ -35,7 +35,7 @@ Don't go to 127.0.0.1, but rather go here:
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
 
 2. Deploy and Scale Nginx container
-You can absolutely do some manual processes with creating, scaling, and deleting clusters. 
+You can perform some manual processes with creating, scaling, and deleting clusters. 
 Note: Take a few moments before running each command. Containers take time to build.
 
 ```
@@ -55,7 +55,7 @@ $ kubectl delete deployment my-nginx
 3. Deploy Cluster WITH yaml files
 
 Clone files to desired directory, then execute said command in that same directory.
-Note: You HAVE to execute the command from INSIDE the directory. Anything else will result in Mathurin and Silva laughing at you.
+Note: You HAVE to execute the command from INSIDE the directory. Anything else will result in frustration and DevOps engineers laughing at you.
 ```
 $ kubectl apply -k .
 ```
