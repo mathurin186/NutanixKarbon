@@ -2,6 +2,26 @@
 ---------------
 Playing around with Karbon shouldn't be hard. Anyone can do this. In fact, that's the point behind Karbon, it's so easy, anyone can use it. You don't have to be an expert.
 
+## New to Git?
+------------------
+If you're new to Github, good chance you're not aware of HomeBrew for your terminal (Mac/Linux). So, I recommend taking a few moments to install Github on your terminal. 
+
+## Installation for Mac
+## Step 1 - Install ![Homebrew](https://brew.sh/)
+Copy & paste the following into the terminal window and hit Return.
+```
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+$ brew doctor
+```
+You will be offered to install the Command Line Developer Tools from Apple. Confirm by clicking Install. After the installation finished, continue installing Homebrew by hitting Return again.
+
+## Step 2 - Install Git
+Copy & paste the following into the terminal window and hit Return.
+```
+brew install git
+```
+
+
 ## What do I do???
 ------------------
 Go through the motions of creating a cluster:
