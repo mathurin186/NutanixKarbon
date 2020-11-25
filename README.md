@@ -6,20 +6,38 @@ Playing around with Karbon shouldn't be hard. Anyone can do this. In fact, that'
 ------------------
 If you're new to Github, good chance you're not aware of HomeBrew for your terminal (Mac/Linux). So, I recommend taking a few moments to install Github on your terminal. 
 
-## Installation for Mac
-## Step 1 - Install ![Homebrew](https://brew.sh/)
-Copy & paste the following into the terminal window and hit Return.
-```
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-$ brew doctor
-```
-You will be offered to install the Command Line Developer Tools from Apple. Confirm by clicking Install. After the installation finished, continue installing Homebrew by hitting Return again.
+# Installing *Git* on a *Mac*
 
-## Step 2 - Install Git
-Copy & paste the following into the terminal window and hit Return.
+[Open a terminal window](http://www.youtube.com/watch?v=zw7Nd67_aFw).
+
+## Step 1 – Install [*Homebrew*](http://brew.sh/)
+
+> *Homebrew* […] simplifies the installation of software on the Mac OS X operating system.
+
+– [Homebrew – Wikipedia](http://en.wikipedia.org/wiki/Homebrew_%28package_management_software%29)
+
+**Copy & paste the following** into the terminal window and **hit `Return`**.
+
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew doctor
 ```
+
+You will be offered to install the *Command Line Developer Tools* from *Apple*. **Confirm by clicking *Install***. After the installation finished, continue installing *Homebrew* by **hitting `Return`** again.
+
+## Step 2 – Install *Git*
+
+**Copy & paste the following** into the terminal window and **hit `Return`**.
+
+```shell
 brew install git
 ```
+
+**You can use *Git* now.**
+
+# Installing *Git* on Windows
+
+1. **Download** *Git* from [Git for Windows](https://gitforwindows.org) and **install it**.
 
 
 ## What do I do???
