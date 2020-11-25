@@ -2,11 +2,13 @@
 ---------------
 Playing around with Karbon shouldn't be hard. Anyone can do this. In fact, that's the point behind Karbon, it's so easy, anyone can use it. You don't have to be an expert.
 
-## New to Git?
+That being said, you will need to use some of the files in this repo for a succesfuly deployment of Karbon and Kubernetes.
+
+# New to Git?
 ------------------
 If you're new to Github, good chance you're not aware of HomeBrew for your terminal (Mac/Linux). So, I recommend taking a few moments to install Github on your terminal. 
 
-# Installing *Git* on a *Mac*
+## Installing *Git* on a *Mac*
 
 [Open a terminal window](http://www.youtube.com/watch?v=zw7Nd67_aFw).
 
@@ -35,10 +37,17 @@ brew install git
 
 **You can use *Git* now.**
 
-# Installing *Git* on Windows
+## Installing *Git* on Windows
 
 1. **Download** *Git* from [Git for Windows](https://gitforwindows.org) and **install it**.
 
+When you've downloaded and installed Git, you're going to need to clone this repo to your working directory in terminal. 
+
+```
+$ git clone https://github.com/mathurin186/NutanixKarbon.git
+```
+
+**Navigate to the new directory to continue...**
 
 ## What do I do???
 ------------------
