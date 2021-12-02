@@ -2,7 +2,20 @@
 ---------------
 Playing around with Karbon shouldn't be hard. Anyone can do this. In fact, that's the point behind Karbon, it's so easy, anyone can use it. You don't have to be an expert.
 
-That being said, you will need to use some of the files in this repo for a succesfuly deployment of Karbon and Kubernetes.
+Assuming you're new to Kubernetes, your first question is no doubt, "What is Kubernetes?". Followed with "Why should I use it?"
+
+[If this is you, pleasure check out this 5 min video from Google](https://www.youtube.com/watch?v=cC46cg5FFAM)
+
+Some key pointers in understanding why Karbon is great to run Kubernetes on Nutanix:
+- Users get the same redundancy built into the Nutanix platform
+- All data is written and read locally
+- We handle the install and provisioning of Kubernetes and networking on CentOS virtual machines
+- Pre-built into the framework is ELK monitoring which you can access after provisioning is complete
+
+Things to keep in mind:
+- After provisioning, you need to download a Kubeconfig file from the Karbon dashboard to access your cluster. Also keep in mind that these files are only active for 24 hours.
+- Ingress networking is supported, but users will need to install it on the VMs themselves
+-We do NOT support GPU with Karbon
 
 # New to Git?
 ------------------
