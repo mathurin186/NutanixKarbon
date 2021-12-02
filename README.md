@@ -17,13 +17,9 @@ Things to keep in mind:
 - Ingress networking is supported, but users will need to install it on the VMs themselves
 -We do NOT support GPU with Karbon
 
-# New to Git?
+## New to Git?
 ------------------
 If you're new to Github, good chance you're not aware of HomeBrew for your terminal (Mac/Linux). So, I recommend taking a few moments to install Github on your terminal. 
-
-## Installing *Git* on a *Mac*
-
-[Open a terminal window](http://www.youtube.com/watch?v=zw7Nd67_aFw).
 
 ## Step 1 – Install [*Homebrew*](http://brew.sh/)
 
