@@ -15,11 +15,12 @@ Some key pointers in understanding why Karbon is great to run Kubernetes on Nuta
 Things to keep in mind:
 - After provisioning, you need to download a Kubeconfig file from the Karbon dashboard to access your cluster. Also keep in mind that these files are only active for 24 hours.
 - Ingress networking is supported, but users will need to install it on the VMs themselves
--We do NOT support GPU with Karbon
+- We do NOT support GPU with Karbon
+- We use only CentOS images for the underlying VM infrastructure
 
 ## New to Git?
 ------------------
-If you're new to Github, good chance you're not aware of HomeBrew for your terminal (Mac/Linux). So, I recommend taking a few moments to install Github on your terminal. 
+If you're new to Github, good chance you're not aware of HomeBrew for your terminal (Mac/Linux). So, I recommend taking a few moments to read about Homebrew as a great package manager for your workstation. 
 
 ## Step 1 – Install [*Homebrew*](http://brew.sh/)
 
@@ -58,16 +59,19 @@ $ git clone https://github.com/mathurin186/NutanixKarbon.git
 
 **Navigate to the new directory to continue...**
 
-## What do I do???
+## What do I do now???
 ------------------
-Go through the motions of creating a cluster:
+
+Log into Prism Central and navigate to Karbon. Go through the motions of creating a cluster:
 - Select Development Cluster
 - Ensure that you select the cluster you want to deploy to (Version and Host OS don't matter for a basic cluster)
 - Select the Node Network that has internet access
 - KNOW that Flannel is the default network provider for Karbon's internal communication
-- Very important to put in your cluster login information
+- Very important to put in your Prism Central cluster login information as Karbon does the deployment through PC.
+- Select a previously created Storage Container from Prism Element as your primary storage.
+- Leave everything else as default.
 
-After creation, download a new KubeConfig file. Understand that this is only live for 24 hours and will need to be redownloaded.
+After creation, download a new Kubeconfig file. Understand that this is only live for 24 hours and will need to be redownloaded.
 
 
 
@@ -78,6 +82,8 @@ The three items you can deploy are showing common use cases. Nothing too 'deep d
 1. Deploy Kubernetes Dashboard
 ![alt text](https://d33wubrfki0l68.cloudfront.net/349824f68836152722dab89465835e604719caea/6e0b7/images/docs/ui-dashboard.png)
 "Dashboard is a web-based Kubernetes user interface. You can use Dashboard to deploy containerized applications to a Kubernetes cluster, troubleshoot your containerized application, and manage the cluster resources. You can use Dashboard to get an overview of applications running on your cluster, as well as for creating or modifying individual Kubernetes resources (such as Deployments, Jobs, DaemonSets, etc)." [Web UI Website](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
+
+Run the command below from your terminal with the newly downloaded kubeconfig file applied to your environment:
 ```
 $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
 ```
@@ -103,15 +109,20 @@ $ kubectl get pods
 $ kubectl expose deployment my-nginx --port=80  type=NodePort
 $ kubectl get services
 ```
-When you're done and want to delete the deployment
+When you're done and want to delete the my-nginx cluster you can just delete the deployment. That will remove everything associated with that cluster.
 ```
 $ kubectl delete deployment my-nginx
 ```
 
-3. Deploy Cluster WITH yaml files
+3. Deploy Cluster WITH yaml files. 
 
-Clone files to desired directory, then execute said command in that same directory.
-Note: You HAVE to execute the command from INSIDE the directory. Anything else will result in frustration and DevOps engineers laughing at you.
+Clone files to desired directory, then execute said command in that same directory. Incase you haven't done this before, run this:
+'''
+$ git clone https://github.com/mathurin186/NutanixKarbon.git
+'''
+
+Note: After cloning this repo, you have to execute the command from INSIDE the directory. Anything else will result in frustration and DevOps engineers laughing at you.
+
 ```
 $ kubectl apply -k .
 ```
