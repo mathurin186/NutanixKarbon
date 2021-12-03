@@ -117,9 +117,9 @@ $ kubectl delete deployment my-nginx
 3. Deploy Cluster WITH yaml files. 
 
 Clone files to desired directory, then execute said command in that same directory. Incase you haven't done this before, run this:
-'''
+```
 $ git clone https://github.com/mathurin186/NutanixKarbon.git
-'''
+```
 
 Note: After cloning this repo, you have to execute the command from INSIDE the directory. Anything else will result in frustration and DevOps engineers laughing at you.
 
