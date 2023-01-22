@@ -1,8 +1,8 @@
 # Nutanix Karbon
 ---------------
-Playing around with Karbon shouldn't be hard. Anyone can do this. In fact, that's the point behind Karbon, it's so easy, anyone can use it. You don't have to be an expert.
+Playing around with Karbon shouldn't be hard. Anyone can do this. In fact, that's the point behind Karbon, it's so easy, anyone can use it. 
 
-Assuming you're new to Kubernetes, your first question is no doubt, "What is Kubernetes?". Followed with "Why should I use it?"
+Assuming you're new to Kubernetes, your first question is no doubt, "What is Kubernetes?". Followed with "Why should I use Kubernetes?"
 
 [If this is you, pleasure check out this 5 min video from Google](https://www.youtube.com/watch?v=cC46cg5FFAM)
 
