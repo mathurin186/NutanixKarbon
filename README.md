@@ -63,10 +63,10 @@ $ git clone https://github.com/mathurin186/NutanixKarbon.git
 ------------------
 
 Log into Prism Central and navigate to Karbon. Go through the motions of creating a cluster:
-- Select Development Cluster
-- Ensure that you select the cluster you want to deploy to (Version and Host OS don't matter for a basic cluster)
-- Select the Node Network that has internet access
-- KNOW that Flannel is the default network provider for Karbon's internal communication
+- Select Development Cluster.
+- Ensure that you select the cluster you want to deploy to (Version and Host OS don't matter for a basic cluster).
+- Select the Node Network that has internet access.
+- As of 2021, Flannel is the default network provider for Karbon's internal communication. So no changing that for now.
 - Very important to put in your Prism Central cluster login information as Karbon does the deployment through PC.
 - Select a previously created Storage Container from Prism Element as your primary storage.
 - Leave everything else as default.
