@@ -130,3 +130,5 @@ $ kubectl apply -k .
 ```
 $ kubectl get pods
 ```
+
+Here you will see that your pods have been created successfully in your new Karbon environment.
