@@ -1,5 +1,8 @@
 # Nutanix Karbon
 ---------------
+
+EDIT --- Nutanix has depreciated the Karbon Platform and instead Nutanix Kubernetes Management. Some of this may no longer be usable, but I will check that out soon enough with a trial. Until then, take this with a grain of salt. Oh, and go earn your CKA.
+
 Playing around with Karbon shouldn't be hard. Anyone can do this. In fact, that's the point behind Karbon, it's so easy, anyone can use it. 
 
 Assuming you're new to Kubernetes, your first question is no doubt, "What is Kubernetes?". Followed with "Why should I use Kubernetes?"
