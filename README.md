@@ -135,3 +135,10 @@ $ kubectl get pods
 ```
 
 Here you will see that your pods have been created successfully in your new Karbon environment.
+
+When you're done with your test deployment my-nginx, clean up your environment:
+
+```
+$ kubectl delete deploy my-nginx
+```
+
