@@ -1,7 +1,7 @@
 # Nutanix Karbon
 ---------------
 
-EDIT --- Nutanix has depreciated the Karbon Platform and instead Nutanix Kubernetes Management. Some of this may no longer be usable, but I will check that out soon enough with a trial. Until then, take this with a grain of salt. Oh, and go earn your CKA.
+EDIT --- Nutanix has depreciated the Karbon Platform and instead [Nutanix Kubernetes Management](https://www.nutanix.com/solutions/cloud-native?utm_source=google_adwords&utm_medium=paid_search&utm_campaign=Nutanix_Search_AMS_NAM_MA_CLD_Google_Demand_X_BR_X_Exact_Leads_cpa_English_English_ACQ_Kubernetes&utm_term=nutanix%20karbon&utm_experience=&cq_plac=&cq_net=g&cq_plt=gp&gclid=EAIaIQobChMI1KD9qLq5_QIVPu7jBx3PCApEEAAYASAAEgLiY_D_BwE) . Some of this may no longer be usable, but I will check that out soon enough with a trial. Until then, take this with a grain of salt. Oh, and go earn your CKA.
 
 Playing around with Karbon shouldn't be hard. Anyone can do this. In fact, that's the point behind Karbon, it's so easy, anyone can use it. 
 
